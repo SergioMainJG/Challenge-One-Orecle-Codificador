@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador Web Challenge</title>
+    <link rel="stylesheet" href="./Css/estilos.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h1 class="h1"> Challenge Oracle & Alura: "Encriptador Web"</h1>
+
+    </header>
+
+    <div class="contenedor">
+
+        <div class="encriptar">
+
+            <textarea name="texto-a-encriptar" id="encriptar-text" class="encriptar-text" cols="30" rows="10"
+                placeholder="Escribe el mensaje" ></textarea>
+        </div>
+
+        <div class=" encriptado">
+            <img src="./Img/Muñeco.png" alt="Placeholder" class="placeholder-image" id="placeholder-image">
+            <textarea name="texto-desencriptado" id="encriptado-text" cols="30" rows="10" readonly="true"
+                class="encriptado-text"></textarea>
+        </div>
+
+    </div>
+
+    <div class="boton-container">
+        <button class="boton" id="encriptar" onclick="codificarTexto()"> Encriptar </button>
+
+        <button class=" boton" id="desencriptar" onclick="decodificarTexto()"> Desencriptar </button>
+
+        <button class="boton" id="copiar" onclick="copyText()"> Copiar </button>
+
+        <button class="boton" id="borrar" onclick="borrarTexto()"> Borrar </button>
+    </div>
+
+    <footer>
+
+        <h3 font-size="15px" class="h3">Redes sociales y relacionados:</h3>
+
+        <div class="icon-container">
+            <ul>
+                <li><a href="https://www.oracle.com/"><img src="./Img/Oracle-icon.png" class="icon"></a></li>
+                <li><a href="https://www.alura.com/"> <img src="./Img/Alura-icon.png" class="icon"> </a> </li>
+                <li><a href="https://github.com/SergioMainJG"><img src="./Img/Github-icon.png" class="icon"></a> </li>
+                <li><a href="https://www.linkedin.com/in/arce-roldán-sergio-elías/"><img src="./Img/Linkdn-icon.png"
+                            class="icon">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+</body>
+
+<script src="./JS/codificador.js"></script>
+<script src="./JS/decodificador.js"></script>
+<script src="./JS/copiar.js"></script>
+<script src="./JS/borrar.js"></script>
+<script src="./JS/validaciones.js"></script>
+
+</html>
